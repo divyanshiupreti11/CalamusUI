@@ -1,0 +1,85 @@
+@import "reset.css";
+@import "variables.css";
+@import "grid.css";
+@import "utilities.css";
+@import "components.css";
+@import "dark-mode.css";
+
+html,
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-4);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+h1 {
+  font-size: var(--font-size-5xl);
+}
+h2 {
+  font-size: var(--font-size-4xl);
+}
+h3 {
+  font-size: var(--font-size-3xl);
+}
+h4 {
+  font-size: var(--font-size-2xl);
+}
+h5 {
+  font-size: var(--font-size-xl);
+}
+h6 {
+  font-size: var(--font-size-lg);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--spacing-4);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+hr {
+  margin: var(--spacing-6) 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
